@@ -1,0 +1,196 @@
+const COPY = {
+  en: {
+    skip: "Skip to content",
+    navAbout: "About",
+    navWork: "What we do",
+    navWhy: "Why us",
+    navFounder: "Founder",
+    navContact: "Partner with us",
+    heroEyebrow: "Japan distribution partner · Sport, football & wellness",
+    heroTitle: "World-class sport &amp; wellness,<br />delivered to Japan’s athletes.",
+    heroLede:
+      "We already work inside Japan’s football ecosystem — professional players, youth academies, clubs, and schools. That network is the shortest path for global sport-tech and recovery brands into the Japanese market.",
+    heroCta: "Start a Japan partnership",
+    heroSecondary: "See our access",
+    stat1Label: "Direct access",
+    stat1Value: "Pro footballers",
+    stat2Label: "Pipeline",
+    stat2Value: "Youth · Clubs · Schools",
+    stat3Label: "Market craft",
+    stat3Value: "Recruit Holdings 6.5 yrs",
+    strip:
+      "Football · Sports · Fitness · Recovery · Health — brands that belong next to athletes, not on a generic shelf.",
+    aboutEyebrow: "About us",
+    aboutTitle: "Built inside the pitch. Not around it.",
+    aboutLead:
+      "PITCHBRIDGE is a Japan-based distributor specializing in sport and wellness. We are not a trading company hunting for any SKU. We are operators who already serve athletes — and who now open that channel to the world’s best products.",
+    aboutP1:
+      "Our foundation is English coaching for professional footballers in Japan, plus academies, clubs, and schools across the youth pathway. That work puts us in locker rooms, training grounds, and family conversations — the exact rooms where performance gear, recovery tools, and health products are trusted or ignored.",
+    aboutP2:
+      "For manufacturers, this is the difference between “a website and a warehouse” and a partner who can put your product in front of the people who actually use it — then design the Japan go-to-market with the same seriousness as a large domestic company.",
+    networkTitle: "Our Japan network",
+    net1Title: "Professional football",
+    net1Body: "English coaching for professionals in Japan — daily proximity to elite athletes.",
+    net2Title: "Youth & academies",
+    net2Body: "Next-generation players, coaches, and parents who invest in performance.",
+    net3Title: "Clubs & schools",
+    net3Body: "Institutional relationships that open B2B trials, kits, and facility sales.",
+    net4Title: "Fitness & health",
+    net4Body: "A natural extension into gyms, recovery, and everyday high-performers.",
+    workEyebrow: "What we do",
+    workTitle: "Japan market entry, done by people who already sell to athletes.",
+    workSub:
+      "We look for overseas partners who want a serious Japan distributor — localization, marketing, and sales under one roof.",
+    card1Title: "Localize",
+    card1Body:
+      "Japanese naming, claims, packaging cues, compliance framing, and athlete-facing language that does not sound imported.",
+    card2Title: "Market",
+    card2Body:
+      "Positioning, launch narrative, and promotion designed for Japan’s football, fitness, and wellness buyers — not a translated brochure.",
+    card3Title: "Sell",
+    card3Body:
+      "B2C to athletes and families. B2B to clubs, academies, schools, and facilities. Direct introduction beats cold retail.",
+    card4Title: "Partner",
+    card4Body:
+      "Exclusive Japan distribution conversations, honest market feedback, and a GTM plan you can take to your board.",
+    whyEyebrow: "Why PITCHBRIDGE",
+    whyTitle: "The access is rare. The strategy is not amateur.",
+    why1Title: "Athlete-native channel",
+    why1Body:
+      "Most importers start with logistics. We start with people who already train, recover, and recommend. Soccer is our home turf; sport, fitness, and health are the natural expansion.",
+    why2Title: "Japan market, professionally designed",
+    why2Body:
+      "6.5 years at Recruit Holdings — one of Japan’s largest companies — in business strategy and corporate planning. We know how this market actually adopts products, and we can build a go-to-market that feels trustworthy, not opportunistic.",
+    why3Title: "Focused category, not a catalog",
+    why3Body:
+      "We only take brands that belong next to athletes: sport-tech, recovery, performance, and wellness. That focus is what makes exclusive Japan rights a credible conversation.",
+    founderEyebrow: "Founder",
+    founderName: "Tomohiro Kajiyama",
+    founderRole: "Founder, PITCHBRIDGE · Japan",
+    founderP1:
+      "Kajiyama spent 6.5 years at Recruit Holdings, working on business strategy and new-business planning inside one of Japan’s defining companies. That is a training ground in how Japanese consumers, organizations, and sales motions actually work.",
+    founderP2:
+      "He now operates at the intersection of elite football and language — coaching English for professional players and for the youth / academy / club / school pathway. The same relationships, and the same strategic discipline, now sit behind Japan distribution for global sport and wellness brands.",
+    founderQuote:
+      "“Give us a product worth putting in an athlete’s bag. We will tell you, honestly, how Japan will buy it — and then we will go sell it.”",
+    founderCardKicker: "Track record",
+    founderLi1: "Recruit Holdings — 6.5 years, strategy & business planning",
+    founderLi2: "English coaching for professional footballers in Japan",
+    founderLi3: "Services for youth, academies, clubs, and schools",
+    founderLi4: "Building a specialist Japan channel for sport & wellness brands",
+    contactEyebrow: "Partnerships",
+    contactTitle: "Looking for a Japan partner who can actually reach athletes?",
+    contactSub:
+      "Manufacturers and brand owners: write to us about exclusive or non-exclusive Japan distribution. We reply to serious product briefs.",
+    contactEmailTitle: "Professional contact",
+    contactEmailLabel: "Partnerships",
+    contactInfoLabel: "General",
+    contactNote:
+      "Send a product brief — specs, current markets, and whether you are seeking exclusive Japan rights. We reply to serious inquiries.",
+    formName: "Name / Company",
+    formEmail: "Work email",
+    formBrand: "Brand / product",
+    formMsg: "Why Japan, and what you need in a partner",
+    formSubmit: "Send inquiry",
+    formOk: "Your email client should open with a draft. If it does not, write to partnerships@pitchbridge.jp.",
+    footerTag: "Japan distribution for sport, football, fitness & wellness.",
+    footerCopy: "© 2026 PITCHBRIDGE. All rights reserved.",
+  },
+  ja: {
+    skip: "本文へスキップ",
+    navAbout: "私たちについて",
+    navWork: "事業内容",
+    navWhy: "選ばれる理由",
+    navFounder: "創業者",
+    navContact: "パートナーになる",
+    heroEyebrow: "日本ディストリビューションパートナー · スポーツ / サッカー / ウェルネス",
+    heroTitle: "世界の最先端スポーツ＆ウェルネスを、<br />日本のアスリートへ。",
+    heroLede:
+      "私たちはすでに、日本のサッカーエコシステムの内側で仕事をしています。プロ選手、ユース・アカデミー、クラブ、スクール。そのネットワークこそ、海外のスポーツテックやリカバリーブランドが日本市場に入る最短距離です。",
+    heroCta: "日本パートナーシップを始める",
+    heroSecondary: "リーチを見る",
+    stat1Label: "直接リーチ",
+    stat1Value: "プロサッカー選手",
+    stat2Label: "パイプライン",
+    stat2Value: "ユース · クラブ · スクール",
+    stat3Label: "市場設計",
+    stat3Value: "リクルートHD 6.5年",
+    strip:
+      "サッカー · スポーツ · フィットネス · リカバリー · 健康 — 棚に並ぶだけの商品ではなく、アスリートの隣に置かれるブランドを扱います。",
+    aboutEyebrow: "私たちについて",
+    aboutTitle: "ピッチの「外側」ではなく、「内側」でつくった会社です。",
+    aboutLead:
+      "PITCHBRIDGEは、スポーツとウェルネスに特化した日本のディストリビューターです。何でも扱う商社ではありません。すでにアスリートにサービスを届けている事業者が、そのチャネルを世界の優れたプロダクトに開きます。",
+    aboutP1:
+      "基盤は、日本のプロサッカー選手への英語コーチング、そしてユース・アカデミー、クラブ、スクールへの学習支援です。ロッカールーム、練習場、選手と家族の会話。パフォーマンスギアやリカバリー、ヘルスケアが「信頼されるか、無視されるか」が決まる場所に、私たちはすでにいます。",
+    aboutP2:
+      "メーカーにとっての違いは、「サイトと倉庫がある輸入業者」ではなく、「実際に使う人の前に商品を置けて、大手事業会社と同じ真剣さで日本のGTMを設計できるパートナー」であることです。",
+    networkTitle: "日本国内のネットワーク",
+    net1Title: "プロサッカー",
+    net1Body: "日本のプロ選手への英語コーチング。トップアスリートとの日常的な近さ。",
+    net2Title: "ユース・アカデミー",
+    net2Body: "次世代選手、指導者、保護者。パフォーマンスに投資する層。",
+    net3Title: "クラブ・スクール",
+    net3Body: "法人・団体との関係から、トライアル、用具、施設販売へ。",
+    net4Title: "フィットネス・健康",
+    net4Body: "ジム、リカバリー、日常のハイパフォーマー層への自然な拡張。",
+    workEyebrow: "事業内容",
+    workTitle: "すでにアスリートに売っている人間が、日本進出を実行します。",
+    workSub:
+      "海外ブランドの日本進出を、ローカライズ、マーケティング、販売まで一気通貫で支援します。本気の独占販売パートナーを探しているメーカーを歓迎します。",
+    card1Title: "ローカライズ",
+    card1Body:
+      "日本向けの名称、表現、パッケージの勘所、規制の整理。輸入品に聞こえない、アスリート向けの言葉にする。",
+    card2Title: "マーケティング",
+    card2Body:
+      "サッカー、フィットネス、ウェルネスの買い手に刺さるポジショニングとローンチ。翻訳パンフレットでは終わりません。",
+    card3Title: "販売",
+    card3Body:
+      "選手・家族へのB2C。クラブ、アカデミー、スクール、施設へのB2B。冷たい小売より、紹介からの導入。",
+    card4Title: "パートナーシップ",
+    card4Body:
+      "日本独占（または非独占）の販売権の対話、率直な市場フィードバック、経営層に出せるGTMプラン。",
+    whyEyebrow: "PITCHBRIDGEが選ばれる理由",
+    whyTitle: "リーチは稀少。戦略は素人ではない。",
+    why1Title: "アスリート起点のチャネル",
+    why1Body:
+      "多くの輸入業者は物流から始まります。私たちは、すでに鍛え、回復し、推薦する人から始まります。ホームはサッカー。スポーツ、フィットネス、健康はその延長線です。",
+    why2Title: "日本市場を、事業として設計できる",
+    why2Body:
+      "日本最大手企業の一つ、リクルートホールディングスで6.5年。事業戦略と事業企画。この市場で商品がどう採用されるかを知っており、信頼される販促と戦略を描けます。",
+    why3Title: "カタログ屋ではなく、カテゴリー特化",
+    why3Body:
+      "扱うのはアスリートの隣に置けるものだけ。スポーツテック、リカバリー、パフォーマンス、ウェルネス。この焦点があるから、日本の独占販売権は本気の会話になります。",
+    founderEyebrow: "創業者",
+    founderName: "梶山 智大",
+    founderRole: "Founder, PITCHBRIDGE · Japan",
+    founderP1:
+      "リクルートホールディングスに6.5年在籍し、事業戦略・事業企画を担当。日本を代表する企業の内側で、生活者、組織、販売の動き方を鍛えられました。",
+    founderP2:
+      "いまは、エリートサッカーと英語の交差点で事業を運営しています。プロ選手への英語コーチング、ユース・アカデミー・クラブ・スクールへの提供。その関係性と、同じ戦略の厳しさが、海外スポーツ／ウェルネスブランドの日本販売の後ろ盾になります。",
+    founderQuote:
+      "「アスリートのバッグに入れていい商品をください。日本でどう売れるかを正直に言い、そのうえで売りにいきます。」",
+    founderCardKicker: "実績",
+    founderLi1: "リクルートホールディングス — 6.5年、事業戦略・事業企画",
+    founderLi2: "日本のプロサッカー選手への英語コーチング",
+    founderLi3: "ユース、アカデミー、クラブ、スクールへのサービス提供",
+    founderLi4: "スポーツ＆ウェルネスブランド向けの日本特化チャネルを構築中",
+    contactEyebrow: "パートナーシップ",
+    contactTitle: "本当にアスリートへ届く、日本パートナーを探していますか？",
+    contactSub:
+      "メーカー・ブランドオーナーの方へ。日本での独占／非独占販売についてご相談ください。中身のあるプロダクトブリーフには必ず返信します。",
+    contactEmailTitle: "公式連絡先",
+    contactEmailLabel: "Partnerships",
+    contactInfoLabel: "General",
+    contactNote:
+      "製品概要、展開中の市場、日本での独占販売を希望するか、を添えてください。中身のある問い合わせには返信します。",
+    formName: "氏名 / 会社名",
+    formEmail: "社用メール",
+    formBrand: "ブランド / 製品",
+    formMsg: "日本で何を実現したいか、パートナーに求めること",
+    formSubmit: "問い合わせを送る",
+    formOk: "メール下書きが開きます。開かない場合は partnerships@pitchbridge.jp まで直接ご連絡ください。",
+    footerTag: "サッカー、スポーツ、フィットネス、ウェルネスの日本ディストリビューション。",
+    footerCopy: "© 2026 PITCHBRIDGE. All rights reserved.",
+  },
+};
