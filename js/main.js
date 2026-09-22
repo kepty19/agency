@@ -161,26 +161,6 @@ if (params.get("lang") === "en" || params.get("lang") === "ja") initial = params
 else if (saved === "en" || saved === "ja") initial = saved;
 applyLang(initial);
 
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-if (!reduceMotion) {
-  const reveals = document.querySelectorAll(".reveal");
-  const io = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add("is-in");
-      });
-    },
-    { threshold: 0.18, rootMargin: "0px 0px -8% 0px" }
-  );
-  reveals.forEach((el) => {
-    el.classList.add("is-pending");
-    io.observe(el);
-  });
-} else {
-  document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-in"));
-}
-
 const chapters = [...document.querySelectorAll(".chapter[id], .open[id]")];
 const indexLinks = [...document.querySelectorAll(".index a")];
 const progress = document.querySelector(".rail-progress");
