@@ -22,16 +22,18 @@ body {
   background-image: radial-gradient(rgba(22, 21, 19, 0.055) 0.65px, transparent 0.75px);
   background-size: 22px 22px;
   color: var(--ink);
+  --lead: 1.7;
   font-family: var(--sans);
   font-weight: 400;
   font-size: 15px;
-  line-height: 1.7;
+  line-height: var(--lead);
   letter-spacing: 0.01em;
 }
 
 html[lang="ja"] body {
+  --lead: 1.9;
   font-size: 15.5px;
-  line-height: 1.9;
+  line-height: var(--lead);
   letter-spacing: 0.04em;
   font-feature-settings: "palt" 1, "kern" 1;
 }
@@ -288,7 +290,7 @@ html[lang="en"] h1 {
 
 .dots li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.85rem;
   padding: 0.55rem 0;
 }
@@ -298,6 +300,7 @@ html[lang="en"] h1 {
   flex: 0 0 5px;
   width: 5px;
   height: 5px;
+  margin-top: calc((var(--lead) * 1em - 5px) / 2);
   border-radius: 50%;
   background: var(--ink);
 }
@@ -330,10 +333,11 @@ html[lang="en"] h1 {
   display: grid;
   grid-template-columns: 3.2rem 1fr;
   gap: 1.1rem;
-  align-items: center;
+  align-items: start;
   padding: 0.7rem 0;
   counter-increment: step;
   color: var(--dim);
+  --fs: 1em;
 }
 
 .steps li::before {
@@ -343,6 +347,8 @@ html[lang="en"] h1 {
   font-weight: 500;
   letter-spacing: 0.06em;
   line-height: 1;
+  height: 1.15rem;
+  margin-top: calc((var(--lead) * var(--fs) - 1.15rem) / 2);
   color: var(--ink);
 }
 

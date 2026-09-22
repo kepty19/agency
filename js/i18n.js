@@ -35,7 +35,6 @@ const COPY = {
     sys3: "日本国外の依頼元企業に対しても、日次の定例や定量・定性のレポーティングを英語で実施可能",
     ch5Title: "代表",
     founderName: "梶山 知裕",
-    founderRole: "代表取締役",
     founderBio1:
       "センアーノ神戸ユースU-18、関西大学を経て、2016年よりオーストラリアNSW州1部リーグで2シーズンプレー。2017年には同リーグにおいて日本人初となる年間得点王を獲得。",
     founderBio2:
@@ -99,7 +98,6 @@ const COPY = {
     sys3: "For companies based outside Japan, we can run daily stand-ups and quantitative / qualitative reporting in English",
     ch5Title: "Principal",
     founderName: "Tomohiro Kajiyama",
-    founderRole: "Representative Director",
     founderBio1:
       "After Sennano Kobe Youth U-18 and Kansai University, he played two seasons in Australia’s NSW State League first division from 2016. In 2017 he became the first Japanese player to win that league’s golden boot.",
     founderBio2:
