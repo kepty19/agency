@@ -32,5 +32,5 @@ Kepty Co., Ltd. (株式会社Kepty) helps companies based outside Japan sell spo
 
 ## Site
 
-- [Home](https://kepty19.github.io/agency/)
-- [Inquiry](https://kepty19.github.io/agency/#inquiry)
+- [Home](https://keptyjapan.com/)
+- [Inquiry](https://keptyjapan.com/#inquiry)

@@ -16,4 +16,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://kepty19.github.io/agency/sitemap.xml
+Sitemap: https://keptyjapan.com/sitemap.xml
