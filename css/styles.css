@@ -3,7 +3,7 @@
   --ink: #111110;
   --dim: #5c5b57;
   --rule: #cfcbc3;
-  --rail: 11rem;
+  --rail: 12.5rem;
 }
 
 * {
@@ -160,6 +160,49 @@ body.has-pointer.is-hovering .pointer {
 .index b,
 .mobile-nav b {
   font-weight: 400;
+  line-height: 1.35;
+}
+
+.body {
+  margin: 0.9rem 0 0;
+  max-width: 40rem;
+  color: var(--dim);
+}
+
+.stack {
+  list-style: none;
+  margin: 1.4rem 0 0;
+  padding: 0;
+}
+
+.stack li {
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.stack li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.role {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--dim);
+}
+
+.bio {
+  margin-top: 1.6rem;
+  max-width: 40rem;
+}
+
+.bio p {
+  margin: 0 0 1rem;
+  color: var(--dim);
+}
+
+.bio p:last-child {
+  margin-bottom: 0;
 }
 
 .lang {
@@ -212,8 +255,8 @@ h1 {
   font-size: clamp(2.35rem, 4.6vw, 4.35rem);
   font-weight: 400;
   letter-spacing: -0.045em;
-  line-height: 1.04;
-  max-width: 12ch;
+  line-height: 1.12;
+  max-width: 14ch;
 }
 
 .lede,

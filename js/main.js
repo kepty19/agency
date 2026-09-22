@@ -58,8 +58,8 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
     data.get("message"),
   ].join("\n");
 
-  const mailto = `mailto:partnerships@pitchbridge.jp?subject=${encodeURIComponent(
-    "Japan distribution inquiry: " + data.get("brand")
+  const mailto = `mailto:info@kepty.jp?subject=${encodeURIComponent(
+    "Japan inquiry: " + data.get("brand")
   )}&body=${encodeURIComponent(body)}`;
 
   window.location.href = mailto;
@@ -70,7 +70,9 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
 
 const params = new URLSearchParams(window.location.search);
 const saved = localStorage.getItem("pb-lang");
-const initial = params.get("lang") === "ja" || saved === "ja" ? "ja" : "en";
+let initial = "ja";
+if (params.get("lang") === "en" || params.get("lang") === "ja") initial = params.get("lang");
+else if (saved === "en" || saved === "ja") initial = saved;
 applyLang(initial);
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
