@@ -3,17 +3,8 @@
   <url>
     <loc>https://kepty19.github.io/agency/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kepty19.github.io/agency/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://kepty19.github.io/agency/en.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kepty19.github.io/agency/en.html" />
-  </url>
-  <url>
-    <loc>https://kepty19.github.io/agency/en.html</loc>
-    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kepty19.github.io/agency/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://kepty19.github.io/agency/en.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kepty19.github.io/agency/en.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kepty19.github.io/agency/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kepty19.github.io/agency/" />
   </url>
 </urlset>

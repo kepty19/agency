@@ -39,14 +39,6 @@ document.querySelectorAll(".lang-btn[href]").forEach((link) => {
   });
 });
 
-const params = new URLSearchParams(window.location.search);
-const onEnglishPage = /\/en\.html$/i.test(location.pathname);
-if (params.get("lang") === "en" && !onEnglishPage) {
-  location.replace(`en.html${location.hash}`);
-} else if (params.get("lang") === "ja" && onEnglishPage) {
-  location.replace(`./${location.hash}`);
-}
-
 function clearFieldError(field) {
   field.classList.remove("is-invalid");
   const note = field.parentElement.querySelector("[data-error]");
