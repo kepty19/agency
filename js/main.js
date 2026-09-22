@@ -3,34 +3,14 @@ const statusEl = document.getElementById("form-status");
 const menuBtn = document.querySelector(".menu-btn");
 const mobileNav = document.getElementById("mobile-nav");
 
-function applyLang(lang) {
-  const dict = COPY[lang] || COPY.en;
-  html.lang = lang === "ja" ? "ja" : "en";
-  html.dataset.lang = lang;
-
-  document.querySelectorAll("[data-i18n]").forEach((el) => {
-    const key = el.dataset.i18n;
-    if (dict[key]) el.textContent = dict[key];
-  });
-
-  document.querySelectorAll("[data-i18n-html]").forEach((el) => {
-    const key = el.dataset.i18nHtml;
-    if (dict[key]) el.innerHTML = dict[key];
-  });
-
-  document.querySelectorAll(".lang-btn").forEach((btn) => {
-    btn.classList.toggle("is-active", btn.dataset.lang === lang);
-  });
-
-  localStorage.setItem("pb-lang", lang);
+function dict() {
+  const lang = html.lang === "en" ? "en" : "ja";
+  return COPY[lang] || COPY.ja;
 }
-
-document.querySelectorAll(".lang-btn").forEach((btn) => {
-  btn.addEventListener("click", () => applyLang(btn.dataset.lang));
-});
 
 mobileNav?.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
+    if (link.hreflang) return;
     mobileNav.setAttribute("hidden", "");
     menuBtn.setAttribute("aria-expanded", "false");
   });
@@ -49,8 +29,22 @@ if (menuBtn) {
   });
 }
 
-function dict() {
-  return COPY[html.dataset.lang || "ja"];
+document.querySelectorAll(".lang-btn[href]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    if (!location.hash) return;
+    event.preventDefault();
+    const next = new URL(link.getAttribute("href"), location.href);
+    next.hash = location.hash;
+    location.href = next.pathname + next.search + next.hash;
+  });
+});
+
+const params = new URLSearchParams(window.location.search);
+const onEnglishPage = /\/en\.html$/i.test(location.pathname);
+if (params.get("lang") === "en" && !onEnglishPage) {
+  location.replace(`en.html${location.hash}`);
+} else if (params.get("lang") === "ja" && onEnglishPage) {
+  location.replace(`./${location.hash}`);
 }
 
 function clearFieldError(field) {
@@ -153,13 +147,6 @@ if (form) {
   }
   });
 }
-
-const params = new URLSearchParams(window.location.search);
-const saved = localStorage.getItem("pb-lang");
-let initial = "ja";
-if (params.get("lang") === "en" || params.get("lang") === "ja") initial = params.get("lang");
-else if (saved === "en" || saved === "ja") initial = saved;
-applyLang(initial);
 
 const chapters = [...document.querySelectorAll(".chapter[id], .open[id]")];
 const indexLinks = [...document.querySelectorAll(".index a")];

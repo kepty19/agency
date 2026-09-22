@@ -1,0 +1,37 @@
+# Kepty Co., Ltd.
+
+> Japan market-entry partner for overseas sport, fitness, recovery and wellness brands.
+
+Kepty Co., Ltd. (株式会社Kepty) helps companies based outside Japan sell sport, fitness and recovery products in Japan. The company also runs Kepty English, an English-learning service for professional and youth/academy footballers. That football network is the commercial core of the market-entry work.
+
+## Facts
+
+- English name: Kepty Co., Ltd.
+- Japanese name: 株式会社Kepty
+- Brand: KEPTY
+- Principal: Tomohiro Kajiyama (梶山 知裕)
+- Contact: contact@kepty.co
+- Market served: Japan
+- Clients: overseas brands (sport, fitness, recovery)
+- Reporting language to overseas headquarters: English
+
+## What we do
+
+- Japan market entry and sales support for overseas brands
+- Online sales: dedicated websites / landing pages and social media
+- Offline sales: football matches and events in Japan; club sponsorship and partnership
+- End-to-end: meetings, orders, fulfilment, after-sales support and upsell
+- Daily stand-ups and quantitative / qualitative reporting in English for companies outside Japan
+
+## Network
+
+- Professional footballers
+- Youth and academy footballers
+- Development-age football clubs and schools
+- Other people across the sports industry in Japan
+
+## Site
+
+- [Japanese](https://kepty19.github.io/agency/): default site
+- [English](https://kepty19.github.io/agency/en.html): page for overseas companies
+- [Inquiry](https://kepty19.github.io/agency/en.html#inquiry): contact form
