@@ -401,13 +401,9 @@ h3 {
 
 .name {
   margin: 0;
-  font-size: clamp(1.7rem, 2.8vw, 2.35rem);
-  letter-spacing: 0.08em;
+  font-size: 0.92rem;
+  letter-spacing: 0.1em;
   line-height: 1.4;
-}
-
-html[lang="en"] .name {
-  letter-spacing: -0.02em;
 }
 
 .mail {
