@@ -76,7 +76,6 @@ else if (saved === "en" || saved === "ja") initial = saved;
 applyLang(initial);
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-const finePointer = window.matchMedia("(pointer: fine)").matches;
 
 if (!reduceMotion) {
   const reveals = document.querySelectorAll(".reveal");
@@ -114,37 +113,3 @@ function onScroll() {
 
 onScroll();
 window.addEventListener("scroll", onScroll, { passive: true });
-
-if (finePointer && !reduceMotion) {
-  const pointer = document.querySelector(".pointer");
-  if (pointer) {
-    document.body.classList.add("has-pointer");
-    let x = 0;
-    let y = 0;
-    let cx = 0;
-    let cy = 0;
-
-    window.addEventListener(
-      "pointermove",
-      (event) => {
-        x = event.clientX;
-        y = event.clientY;
-      },
-      { passive: true }
-    );
-
-    const hoverables = "a, button, input, textarea, label";
-    document.querySelectorAll(hoverables).forEach((el) => {
-      el.addEventListener("pointerenter", () => document.body.classList.add("is-hovering"));
-      el.addEventListener("pointerleave", () => document.body.classList.remove("is-hovering"));
-    });
-
-    const tick = () => {
-      cx += (x - cx) * 0.22;
-      cy += (y - cy) * 0.22;
-      pointer.style.transform = `translate3d(${cx}px, ${cy}px, 0)`;
-      requestAnimationFrame(tick);
-    };
-    tick();
-  }
-}
