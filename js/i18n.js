@@ -67,7 +67,7 @@ const COPY = {
   },
   en: {
     skip: "Skip to content",
-    loc: "Kepty Inc.",
+    loc: "Kepty Co., Ltd.",
     nav0: "Menu",
     nav1: "Strength",
     nav2: "Network",
@@ -79,7 +79,7 @@ const COPY = {
     kicker: "Japan market-entry support for sport, fitness and recovery products",
     heroTitle: "Command of the Japan market.",
     heroLede:
-      "Japan has its own culture, customs, and language. Enter it with Kepty Inc.",
+      "Japan has its own culture, customs, and language. Enter it with Kepty Co., Ltd.",
     ch1Title: "Strength",
     ch1Lead: "A network inside sport",
     ch1Body:
@@ -107,11 +107,11 @@ const COPY = {
     founderBio2:
       "On retirement he joined Recruit. He worked in business strategy and planning on Study Sapuri, one of Japan’s largest education products, and on Quipper, Recruit’s global education business for Southeast Asia (the Philippines and Indonesia).",
     founderBio3:
-      "He then founded Kepty Inc. The company runs Kepty English — English learning specialised in football, for professionals and the youth / academy pathway — and now uses that same network to help overseas companies enter the Japan market.",
+      "He then founded Kepty Co., Ltd. The company runs Kepty English — English learning specialised in football, for professionals and the youth / academy pathway — and now uses that same network to help overseas companies enter the Japan market.",
     ch6Title: "Company",
     ch7Title: "Inquiry",
     co1k: "Name",
-    co1v: "Kepty Inc.",
+    co1v: "Kepty Co., Ltd.",
     co2k: "Principal",
     co2v: "Tomohiro Kajiyama",
     co3k: "Business",
@@ -130,6 +130,6 @@ const COPY = {
     formActivate:
       "First submission: please open the confirmation email sent to contact@kepty.co. After that, inquiries will arrive. Check spam if needed.",
     formError: "Could not send. Please try again shortly.",
-    footerCopy: "© 2026 Kepty Inc.",
+    footerCopy: "© 2026 Kepty Co., Ltd.",
   },
 };
