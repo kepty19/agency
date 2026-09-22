@@ -47,25 +47,47 @@ mobileNav.querySelectorAll("a").forEach((link) => {
   });
 });
 
-document.getElementById("contact-form").addEventListener("submit", (event) => {
+document.getElementById("contact-form").addEventListener("submit", async (event) => {
   event.preventDefault();
-  const data = new FormData(event.target);
-  const body = [
-    `Name / Company: ${data.get("name")}`,
-    `Email: ${data.get("email")}`,
-    `Brand: ${data.get("brand")}`,
-    "",
-    data.get("message"),
-  ].join("\n");
+  const form = event.target;
+  const button = form.querySelector('button[type="submit"]');
+  const lang = html.dataset.lang || "ja";
+  const dict = COPY[lang];
+  const data = new FormData(form);
 
-  const mailto = `mailto:contact@kepty.co?subject=${encodeURIComponent(
-    "Japan inquiry: " + data.get("brand")
-  )}&body=${encodeURIComponent(body)}`;
-
-  window.location.href = mailto;
   statusEl.hidden = false;
-  const lang = html.dataset.lang || "en";
-  statusEl.textContent = COPY[lang].formOk;
+  statusEl.textContent = dict.formSending;
+  button.disabled = true;
+
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/contact@kepty.co", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        _subject: "Kepty website inquiry",
+        _template: "table",
+        _captcha: "false",
+        会社名: data.get("company"),
+        氏名: data.get("name"),
+        Email: data.get("email"),
+        問い合わせ内容: data.get("message"),
+      }),
+    });
+
+    if (!response.ok) throw new Error("send failed");
+    const result = await response.json();
+    if (result.success === "false") throw new Error("send failed");
+
+    statusEl.textContent = dict.formOk;
+    form.reset();
+  } catch (error) {
+    statusEl.textContent = dict.formError;
+  } finally {
+    button.disabled = false;
+  }
 });
 
 const params = new URLSearchParams(window.location.search);

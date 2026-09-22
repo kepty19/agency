@@ -174,7 +174,7 @@
           </div>
           <div>
             <dt data-i18n="co4k">連絡</dt>
-            <dd><a href="mailto:contact@kepty.co">contact@kepty.co</a></dd>
+            <dd>contact@kepty.co</dd>
           </div>
         </dl>
       </section>
@@ -186,22 +186,22 @@
         </header>
         <form id="contact-form">
           <label>
-            <span data-i18n="formName">氏名 / 会社名</span>
-            <input type="text" name="name" required autocomplete="organization" />
+            <span data-i18n="formCompany">会社名</span>
+            <input type="text" name="company" required autocomplete="organization" />
           </label>
           <label>
-            <span data-i18n="formEmail">社用メール</span>
-            <input type="email" name="email" required autocomplete="email" />
-          </label>
-          <label>
-            <span data-i18n="formBrand">ブランド / 製品</span>
-            <input type="text" name="brand" required />
+            <span data-i18n="formPerson">氏名</span>
+            <input type="text" name="name" required autocomplete="name" />
           </label>
           <label class="wide">
-            <span data-i18n="formMsg">照会内容</span>
-            <textarea name="message" rows="3" required></textarea>
+            <span data-i18n="formEmail">Email</span>
+            <input type="email" name="email" required autocomplete="email" />
           </label>
-          <button type="submit" data-i18n="formSubmit">送る</button>
+          <label class="wide">
+            <span data-i18n="formMsg">問い合わせ内容</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" data-i18n="formSubmit">送信</button>
           <p class="form-status" id="form-status" hidden></p>
         </form>
       </section>
