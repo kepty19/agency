@@ -58,7 +58,7 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
     data.get("message"),
   ].join("\n");
 
-  const mailto = `mailto:info@kepty.jp?subject=${encodeURIComponent(
+  const mailto = `mailto:contact@kepty.co?subject=${encodeURIComponent(
     "Japan inquiry: " + data.get("brand")
   )}&body=${encodeURIComponent(body)}`;
 

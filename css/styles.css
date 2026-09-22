@@ -105,10 +105,8 @@ a {
 }
 
 html[lang="en"] .index-label,
-html[lang="en"] h2,
 html[lang="en"] h3,
 html[lang="en"] .kicker,
-html[lang="en"] .mail span,
 html[lang="en"] label,
 html[lang="en"] button[type="submit"] {
   text-transform: uppercase;
@@ -149,22 +147,6 @@ html[lang="en"] button[type="submit"] {
   margin: 1rem 0 0;
   max-width: 42rem;
   color: var(--dim);
-}
-
-.stack {
-  list-style: none;
-  margin: 1.6rem 0 0;
-  padding: 0;
-  max-width: 42rem;
-}
-
-.stack li {
-  padding: 0.95rem 0;
-  border-top: 1px solid var(--rule);
-}
-
-.stack li:last-child {
-  border-bottom: 1px solid var(--rule);
 }
 
 .role {
@@ -285,17 +267,95 @@ html[lang="en"] h1 {
   font-variant-numeric: tabular-nums;
 }
 
-h2,
-h3 {
+.dots {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  max-width: 42rem;
+}
+
+.dots li {
+  position: relative;
+  padding: 0.85rem 0 0.85rem 1.35rem;
+  border-top: 1px solid var(--rule);
+}
+
+.dots li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.dots li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.25rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+.split-text .dots {
+  margin-top: 0;
+}
+
+.split-text .dots li {
+  padding-left: 1.35rem;
+}
+
+.split-text ul {
   margin: 0;
-  font-size: 0.78rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  color: var(--dim);
+}
+
+.steps {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  max-width: 44rem;
+  counter-reset: step;
+}
+
+.steps li {
+  display: grid;
+  grid-template-columns: 3.2rem 1fr;
+  gap: 1.1rem;
+  align-items: baseline;
+  padding: 1.15rem 0;
+  border-top: 1px solid var(--rule);
+  counter-increment: step;
+  color: var(--dim);
+}
+
+.steps li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.steps li::before {
+  content: counter(step, decimal-leading-zero);
+  font-family: var(--serif);
+  font-size: 1.15rem;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
 }
 
 h3 {
   margin: 0 0 0.9rem;
-  font-weight: 400;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   color: var(--ink);
 }
 
@@ -333,20 +393,6 @@ h3 {
   gap: 2.75rem;
   margin-top: 1.5rem;
   max-width: 48rem;
-}
-
-.split-text ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 0.75rem;
-  color: var(--dim);
-}
-
-.split-text li + li {
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--rule);
 }
 
 .name {

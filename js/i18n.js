@@ -9,9 +9,10 @@ const COPY = {
     nav4: "体制",
     nav5: "代表",
     nav6: "会社情報",
-    kicker: "スポーツ・フィットネス・リカバリー商品の日本進出",
-    heroTitle: "日本マーケットを制圧する。",
-    heroLede: "独特の文化や風習、言語が根付く日本マーケットへの進出。我々 株式会社Kepty と共に歩みませんか。",
+    nav7: "問い合わせ",
+    kicker: "スポーツ・フィットネス・リカバリー商品の日本進出支援サービス",
+    heroTitle: "日本マーケットの制圧。",
+    heroLede: "独特の文化や風習、言語が根付く日本マーケットへの進出。我々、株式会社Keptyと共に歩みませんか。",
     ch1Title: "我々の強み",
     ch1Lead: "スポーツ業界へのネットワーク",
     ch1Body:
@@ -33,8 +34,8 @@ const COPY = {
     sys2: "商品提供後のカスタマーサポートからアップセル営業までを、弊社にて代行",
     sys3: "日本国外の依頼元企業に対しても、日次の定例や定量・定性のレポーティングを英語で実施可能",
     ch5Title: "代表",
-    founderName: "梶山 智大",
-    founderRole: "代表 / 株式会社Kepty",
+    founderName: "梶山 知裕",
+    founderRole: "代表取締役",
     founderLead:
       "代表は、サッカー選手として2年間プレーした経験があります。また、日本最大手企業の一つであるリクルートホールディングスで6.5年間勤務しました。その確固たる実績が、信頼の証です。",
     founderBio1:
@@ -44,10 +45,11 @@ const COPY = {
     founderBio3:
       "その後、株式会社Keptyを設立。プロサッカー選手やユース・アカデミー世代などのサッカー業界に特化した英語学習サービス『Kepty English』を運営。同時に、そこで生まれるネットワークを有効活用し、海外企業の日本マーケット進出支援の事業も開始。",
     ch6Title: "会社情報",
+    ch7Title: "問い合わせ",
     co1k: "会社名",
     co1v: "株式会社Kepty",
     co2k: "代表",
-    co2v: "梶山 智大",
+    co2v: "梶山 知裕",
     co3k: "事業",
     co3v: "Kepty English（サッカー業界特化の英語学習）／海外企業の日本マーケット進出支援",
     co4k: "連絡",
@@ -57,7 +59,7 @@ const COPY = {
     formBrand: "ブランド / 製品",
     formMsg: "照会内容",
     formSubmit: "送る",
-    formOk: "メール下書きが開きます。開かない場合は info@kepty.jp へ。",
+    formOk: "メール下書きが開きます。開かない場合は contact@kepty.co へ。",
     footerCopy: "© 2026 株式会社Kepty",
   },
   en: {
@@ -70,8 +72,9 @@ const COPY = {
     nav4: "Operating model",
     nav5: "Principal",
     nav6: "Company",
-    kicker: "Japan entry for sport, fitness and recovery products",
-    heroTitle: "Conquer the Japan market.",
+    nav7: "Inquiry",
+    kicker: "Japan market-entry support for sport, fitness and recovery products",
+    heroTitle: "Command of the Japan market.",
     heroLede:
       "Japan has its own culture, customs, and language. Enter it with Kepty Inc.",
     ch1Title: "Strength",
@@ -96,7 +99,7 @@ const COPY = {
     sys3: "For companies based outside Japan, we can run daily stand-ups and quantitative / qualitative reporting in English",
     ch5Title: "Principal",
     founderName: "Tomohiro Kajiyama",
-    founderRole: "Principal / Kepty Inc.",
+    founderRole: "Representative Director",
     founderLead:
       "The principal played football professionally for two years, then spent 6.5 years at Recruit Holdings, one of Japan’s largest companies. That record is the ground of trust.",
     founderBio1:
@@ -106,6 +109,7 @@ const COPY = {
     founderBio3:
       "He then founded Kepty Inc. The company runs Kepty English — English learning specialised in football, for professionals and the youth / academy pathway — and now uses that same network to help overseas companies enter the Japan market.",
     ch6Title: "Company",
+    ch7Title: "Inquiry",
     co1k: "Name",
     co1v: "Kepty Inc.",
     co2k: "Principal",
@@ -119,7 +123,7 @@ const COPY = {
     formBrand: "Brand / product",
     formMsg: "Inquiry",
     formSubmit: "Send",
-    formOk: "Your mail client should open. If not, write to info@kepty.jp.",
+    formOk: "Your mail client should open. If not, write to contact@kepty.co.",
     footerCopy: "© 2026 Kepty Inc.",
   },
 };
