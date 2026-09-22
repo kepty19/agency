@@ -83,7 +83,7 @@ const COPY = {
     ch1Title: "Strength",
     ch1Lead: "A network inside sport",
     ch1Body:
-      "We provide English learning to professional footballers and to the youth / academy generation. That network and those customer contacts — football first, then the wider sports industry — are our strength.",
+      "We provide English learning to professional footballers and to the youth and academy generation. That network and those customer contacts — football first, then the wider sports industry — are our strength.",
     ch2Title: "Network",
     net1: "Professional footballers",
     net2: "Youth and academy footballers",
@@ -99,15 +99,15 @@ const COPY = {
     ch4Title: "Operating model",
     sys1: "From online meetings with customers won through our channels, through order-taking, to fulfilment — end to end",
     sys2: "After delivery, we also run customer support and upsell on your behalf",
-    sys3: "For companies based outside Japan, we can run daily stand-ups and quantitative / qualitative reporting in English",
+    sys3: "For companies based outside Japan, we can run daily stand-ups and quantitative and qualitative reporting in English",
     ch5Title: "Founder & CEO",
     founderName: "Tomohiro Kajiyama",
     founderBio1:
-      "After Sennano Kobe Youth U-18 and Kansai University, he played two seasons in Australia’s NSW State League first division from 2016. In 2017 he became the first Japanese player to win that league’s golden boot.",
+      "After Cemano Kobe Youth U-18 and Kansai University, he played two seasons in Australia’s NSW State League first division from 2016. In 2017 he became the first Japanese player to win that league’s golden boot award.",
     founderBio2:
-      "On retirement he joined Recruit. He worked in business strategy and planning on Study Sapuri, one of Japan’s largest education products, and on Quipper, Recruit’s global education business for Southeast Asia (the Philippines and Indonesia).",
+      "On retirement he joined Recruit Holdings. He worked in business strategy and planning on Study Sapuri, one of Japan’s largest education products, and on Quipper, Recruit Holdings’ global education business for Southeast Asia (the Philippines and Indonesia).",
     founderBio3:
-      "He then founded Kepty Co., Ltd. The company runs Kepty English — English learning specialised in football, for professionals and the youth / academy pathway — and now uses that same network to help overseas companies enter the Japan market.",
+      "He then founded Kepty Co., Ltd. The company runs Kepty English — English learning specialised in football, for professionals and the youth and academy pathway — and now uses that same network to help overseas companies enter the Japan market.",
     ch6Title: "Company",
     ch7Title: "Inquiry",
     co1k: "Name",
@@ -115,7 +115,7 @@ const COPY = {
     co2k: "Founder & CEO",
     co2v: "Tomohiro Kajiyama",
     co3k: "Business",
-    co3v: "Kepty English (English learning for football) / Japan market-entry support for overseas companies",
+    co3v: "Kepty English (English learning for football) and Japan market-entry support for overseas companies",
     co4k: "Contact",
     mailLabel: "Partnerships",
     formCompany: "Company",
