@@ -29,23 +29,25 @@ document.querySelectorAll(".lang-btn").forEach((btn) => {
   btn.addEventListener("click", () => applyLang(btn.dataset.lang));
 });
 
-menuBtn.addEventListener("click", () => {
-  const open = mobileNav.hasAttribute("hidden") === false;
-  if (open) {
-    mobileNav.setAttribute("hidden", "");
-    menuBtn.setAttribute("aria-expanded", "false");
-  } else {
-    mobileNav.removeAttribute("hidden");
-    menuBtn.setAttribute("aria-expanded", "true");
-  }
-});
-
-mobileNav.querySelectorAll("a").forEach((link) => {
+mobileNav?.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     mobileNav.setAttribute("hidden", "");
     menuBtn.setAttribute("aria-expanded", "false");
   });
 });
+
+if (menuBtn) {
+  menuBtn.addEventListener("click", () => {
+    const open = mobileNav.hasAttribute("hidden") === false;
+    if (open) {
+      mobileNav.setAttribute("hidden", "");
+      menuBtn.setAttribute("aria-expanded", "false");
+    } else {
+      mobileNav.removeAttribute("hidden");
+      menuBtn.setAttribute("aria-expanded", "true");
+    }
+  });
+}
 
 function dict() {
   return COPY[html.dataset.lang || "ja"];
@@ -97,12 +99,13 @@ function validateForm(form) {
   return firstInvalid;
 }
 
-form.querySelectorAll("input, textarea").forEach((field) => {
-  field.addEventListener("input", () => clearFieldError(field));
-});
-
 const form = document.getElementById("contact-form");
-form.addEventListener("submit", async (event) => {
+if (form) {
+  form.querySelectorAll("input, textarea").forEach((field) => {
+    field.addEventListener("input", () => clearFieldError(field));
+  });
+
+  form.addEventListener("submit", async (event) => {
   event.preventDefault();
   const button = form.querySelector('button[type="submit"]');
   const copy = dict();
@@ -148,7 +151,8 @@ form.addEventListener("submit", async (event) => {
   } finally {
     button.disabled = false;
   }
-});
+  });
+}
 
 const params = new URLSearchParams(window.location.search);
 const saved = localStorage.getItem("pb-lang");
@@ -169,7 +173,10 @@ if (!reduceMotion) {
     },
     { threshold: 0.18, rootMargin: "0px 0px -8% 0px" }
   );
-  reveals.forEach((el) => io.observe(el));
+  reveals.forEach((el) => {
+    el.classList.add("is-pending");
+    io.observe(el);
+  });
 } else {
   document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-in"));
 }

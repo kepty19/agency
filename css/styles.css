@@ -530,6 +530,11 @@ footer::before {
 }
 
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal.is-pending {
   opacity: 0;
   transform: translate3d(0, 12px, 0);
   transition: opacity 0.7s ease, transform 0.7s ease;
@@ -600,7 +605,8 @@ footer::before {
     scroll-behavior: auto;
   }
 
-  .reveal {
+  .reveal,
+  .reveal.is-pending {
     transition: none;
     transform: none;
     opacity: 1;
