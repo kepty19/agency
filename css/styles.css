@@ -432,10 +432,19 @@ html[lang="en"] .name {
 }
 
 form {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.3rem 1.8rem;
   max-width: 40rem;
+}
+
+.honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 form .wide,

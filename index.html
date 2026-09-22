@@ -24,8 +24,8 @@
       <span class="rail-progress" aria-hidden="true"></span>
       <a class="brand" href="#top">KEPTY</a>
       <p class="loc" data-i18n="loc">株式会社Kepty</p>
-      <nav class="index" aria-label="Index">
-        <p class="index-label" data-i18n="nav0">目次</p>
+      <nav class="index" aria-label="メニュー">
+        <p class="index-label" data-i18n="nav0">メニュー</p>
         <a href="#strength"><span>01</span> <b data-i18n="nav1">我々の強み</b></a>
         <a href="#network"><span>02</span> <b data-i18n="nav2">ネットワーク</b></a>
         <a href="#channels"><span>03</span> <b data-i18n="nav3">販売支援のチャネル</b></a>
@@ -43,8 +43,8 @@
 
     <header class="mobile-bar">
       <a class="brand" href="#top">KEPTY</a>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menu">
-        Index
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" data-i18n="nav0">
+        メニュー
       </button>
     </header>
 
@@ -197,6 +197,7 @@
             <span data-i18n="formMsg">問い合わせ内容</span>
             <textarea name="message" rows="4" required></textarea>
           </label>
+          <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" />
           <button type="submit" data-i18n="formSubmit">送信</button>
           <p class="form-status" id="form-status" hidden></p>
         </form>

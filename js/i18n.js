@@ -2,7 +2,7 @@ const COPY = {
   ja: {
     skip: "本文へスキップ",
     loc: "株式会社Kepty",
-    nav0: "目次",
+    nav0: "メニュー",
     nav1: "我々の強み",
     nav2: "ネットワーク",
     nav3: "販売支援のチャネル",
@@ -57,14 +57,16 @@ const COPY = {
     formMsg: "問い合わせ内容",
     formSubmit: "送信",
     formSending: "送信中…",
-    formOk: "送信しました。",
+    formOk: "送信しました。確認次第、担当者から連絡差し上げます。",
+    formActivate:
+      "初回送信です。contact@kepty.co に確認メールが届いているはずです。リンクを開くと、以降の問い合わせが届きます。迷惑メールもご確認ください。",
     formError: "送信できませんでした。時間をおいて再度お試しください。",
     footerCopy: "© 2026 株式会社Kepty",
   },
   en: {
     skip: "Skip to content",
     loc: "Kepty Inc.",
-    nav0: "Index",
+    nav0: "Menu",
     nav1: "Strength",
     nav2: "Network",
     nav3: "Sales channels",
@@ -120,7 +122,9 @@ const COPY = {
     formMsg: "Inquiry",
     formSubmit: "Send",
     formSending: "Sending…",
-    formOk: "Sent.",
+    formOk: "Sent. We will get back to you once it has been reviewed.",
+    formActivate:
+      "First submission: please open the confirmation email sent to contact@kepty.co. After that, inquiries will arrive. Check spam if needed.",
     formError: "Could not send. Please try again shortly.",
     footerCopy: "© 2026 Kepty Inc.",
   },

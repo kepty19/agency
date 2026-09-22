@@ -53,36 +53,38 @@ document.getElementById("contact-form").addEventListener("submit", async (event)
   const button = form.querySelector('button[type="submit"]');
   const lang = html.dataset.lang || "ja";
   const dict = COPY[lang];
-  const data = new FormData(form);
 
   statusEl.hidden = false;
   statusEl.textContent = dict.formSending;
   button.disabled = true;
 
+  const payload = new FormData(form);
+  payload.set("_subject", "Kepty website inquiry");
+  payload.set("_template", "table");
+  payload.set("_captcha", "false");
+  payload.set("replyto", payload.get("email") || "");
+
   try {
     const response = await fetch("https://formsubmit.co/ajax/contact@kepty.co", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        _subject: "Kepty website inquiry",
-        _template: "table",
-        _captcha: "false",
-        会社名: data.get("company"),
-        氏名: data.get("name"),
-        Email: data.get("email"),
-        問い合わせ内容: data.get("message"),
-      }),
+      headers: { Accept: "application/json" },
+      body: payload,
     });
 
-    if (!response.ok) throw new Error("send failed");
-    const result = await response.json();
-    if (result.success === "false") throw new Error("send failed");
+    const result = await response.json().catch(() => ({}));
+    const message = `${result.message || ""} ${result.success || ""}`;
+    const needsActivate = /activat|confirm|verify/i.test(message);
 
-    statusEl.textContent = dict.formOk;
-    form.reset();
+    if (!response.ok || result.success === false || result.success === "false") {
+      if (needsActivate) {
+        statusEl.textContent = dict.formActivate;
+        return;
+      }
+      throw new Error("send failed");
+    }
+
+    statusEl.textContent = needsActivate ? dict.formActivate : dict.formOk;
+    if (!needsActivate) form.reset();
   } catch (error) {
     statusEl.textContent = dict.formError;
   } finally {
