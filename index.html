@@ -180,24 +180,27 @@
           <span>07</span>
           <h2 data-i18n="ch7Title">問い合わせ</h2>
         </header>
-        <form id="contact-form">
+        <form id="contact-form" novalidate>
           <label>
             <span data-i18n="formCompany">会社名</span>
-            <input type="text" name="company" required autocomplete="organization" />
+            <input type="text" name="company" autocomplete="organization" />
+            <em class="field-error" data-error></em>
           </label>
           <label>
             <span data-i18n="formPerson">氏名</span>
-            <input type="text" name="name" required autocomplete="name" />
+            <input type="text" name="name" autocomplete="name" />
+            <em class="field-error" data-error></em>
           </label>
           <label class="wide">
             <span data-i18n="formEmail">Email</span>
-            <input type="email" name="email" required autocomplete="email" />
+            <input type="email" name="email" autocomplete="email" />
+            <em class="field-error" data-error></em>
           </label>
           <label class="wide">
             <span data-i18n="formMsg">問い合わせ内容</span>
-            <textarea name="message" rows="4" required></textarea>
+            <textarea name="message" rows="4"></textarea>
+            <em class="field-error" data-error></em>
           </label>
-          <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" />
           <button type="submit" data-i18n="formSubmit">送信</button>
           <p class="form-status" id="form-status" hidden></p>
         </form>

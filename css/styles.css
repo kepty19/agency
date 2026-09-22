@@ -439,18 +439,29 @@ form {
   max-width: 40rem;
 }
 
-.honey {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
 form .wide,
 form button,
 .form-status {
   grid-column: 1 / -1;
+}
+
+.field-error {
+  display: none;
+  font-style: normal;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--ink);
+  opacity: 0.5;
+}
+
+.field-error.is-on {
+  display: block;
+}
+
+input.is-invalid,
+textarea.is-invalid {
+  border-bottom-color: var(--ink);
 }
 
 label {

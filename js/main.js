@@ -47,15 +47,73 @@ mobileNav.querySelectorAll("a").forEach((link) => {
   });
 });
 
-document.getElementById("contact-form").addEventListener("submit", async (event) => {
+function dict() {
+  return COPY[html.dataset.lang || "ja"];
+}
+
+function clearFieldError(field) {
+  field.classList.remove("is-invalid");
+  const note = field.parentElement.querySelector("[data-error]");
+  if (note) {
+    note.textContent = "";
+    note.classList.remove("is-on");
+  }
+}
+
+function setFieldError(field, message) {
+  field.classList.add("is-invalid");
+  const note = field.parentElement.querySelector("[data-error]");
+  if (note) {
+    note.textContent = message;
+    note.classList.add("is-on");
+  }
+}
+
+function validateForm(form) {
+  const copy = dict();
+  let firstInvalid = null;
+  const email = form.elements.email;
+  const checks = [
+    [form.elements.company, copy.formRequired],
+    [form.elements.name, copy.formRequired],
+    [email, copy.formRequired],
+    [form.elements.message, copy.formRequired],
+  ];
+
+  checks.forEach(([field, emptyMessage]) => {
+    clearFieldError(field);
+    const value = (field.value || "").trim();
+    if (!value) {
+      setFieldError(field, emptyMessage);
+      if (!firstInvalid) firstInvalid = field;
+      return;
+    }
+    if (field === email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+      setFieldError(field, copy.formInvalidEmail);
+      if (!firstInvalid) firstInvalid = field;
+    }
+  });
+
+  return firstInvalid;
+}
+
+form.querySelectorAll("input, textarea").forEach((field) => {
+  field.addEventListener("input", () => clearFieldError(field));
+});
+
+const form = document.getElementById("contact-form");
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
-  const form = event.target;
   const button = form.querySelector('button[type="submit"]');
-  const lang = html.dataset.lang || "ja";
-  const dict = COPY[lang];
+  const copy = dict();
+  const invalid = validateForm(form);
+  if (invalid) {
+    invalid.focus();
+    return;
+  }
 
   statusEl.hidden = false;
-  statusEl.textContent = dict.formSending;
+  statusEl.textContent = copy.formSending;
   button.disabled = true;
 
   const payload = new FormData(form);
@@ -77,16 +135,16 @@ document.getElementById("contact-form").addEventListener("submit", async (event)
 
     if (!response.ok || result.success === false || result.success === "false") {
       if (needsActivate) {
-        statusEl.textContent = dict.formActivate;
+        statusEl.textContent = copy.formActivate;
         return;
       }
       throw new Error("send failed");
     }
 
-    statusEl.textContent = needsActivate ? dict.formActivate : dict.formOk;
+    statusEl.textContent = needsActivate ? copy.formActivate : copy.formOk;
     if (!needsActivate) form.reset();
   } catch (error) {
-    statusEl.textContent = dict.formError;
+    statusEl.textContent = copy.formError;
   } finally {
     button.disabled = false;
   }

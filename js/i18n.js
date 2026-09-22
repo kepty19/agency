@@ -56,6 +56,8 @@ const COPY = {
     formEmail: "Email",
     formMsg: "問い合わせ内容",
     formSubmit: "送信",
+    formRequired: "未入力です",
+    formInvalidEmail: "正しいEmailをご入力ください",
     formSending: "送信中…",
     formOk: "送信しました。確認次第、担当者から連絡差し上げます。",
     formActivate:
@@ -121,6 +123,8 @@ const COPY = {
     formEmail: "Email",
     formMsg: "Inquiry",
     formSubmit: "Send",
+    formRequired: "Required",
+    formInvalidEmail: "Enter a valid email",
     formSending: "Sending…",
     formOk: "Sent. We will get back to you once it has been reviewed.",
     formActivate:
