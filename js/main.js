@@ -161,3 +161,19 @@ function onScroll() {
 
 onScroll();
 window.addEventListener("scroll", onScroll, { passive: true });
+
+function equalizeSteps() {
+  const items = [...document.querySelectorAll(".steps li")];
+  if (!items.length) return;
+  items.forEach((item) => {
+    item.style.minHeight = "";
+  });
+  const max = Math.max(...items.map((item) => item.getBoundingClientRect().height));
+  items.forEach((item) => {
+    item.style.minHeight = `${Math.ceil(max)}px`;
+  });
+}
+
+equalizeSteps();
+window.addEventListener("resize", equalizeSteps);
+if (document.fonts) document.fonts.ready.then(equalizeSteps);
