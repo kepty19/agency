@@ -467,12 +467,10 @@ h3 {
 .band {
   display: grid;
   grid-template-columns: 5.75rem 1fr;
-  border: 1px solid var(--rule);
-  background: color-mix(in srgb, var(--bg) 62%, #fff);
 }
 
 .band + .band {
-  margin-top: -1px;
+  margin-top: 0.85rem;
 }
 
 .work {
@@ -485,8 +483,7 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 0.7rem;
-  border-right: 1px solid var(--rule);
-  padding: 1.05rem 0;
+  padding: 0.35rem 0;
 }
 
 .band-side span:last-child {
@@ -511,21 +508,6 @@ h3 {
 
 .band .dots li {
   padding: 0.28rem 0;
-}
-
-.monogram {
-  display: inline-grid;
-  place-items: center;
-  width: 2.35rem;
-  height: 2.35rem;
-  margin-right: 0.75rem;
-  border: 1px solid var(--ink);
-  font-family: var(--serif);
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  vertical-align: middle;
-  position: relative;
-  top: -0.06rem;
 }
 
 .name {
@@ -725,9 +707,6 @@ footer::before {
 
   .band {
     display: block;
-    border: 0;
-    border-top: 1px solid var(--rule);
-    background: none;
   }
 
   .band + .band {
