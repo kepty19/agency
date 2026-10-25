@@ -99,7 +99,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300;400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Shippori+Mincho:wght@500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=5" />
+    <link rel="stylesheet" href="css/styles.css?v=10" />
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">本文へスキップ</a>
@@ -142,6 +142,12 @@
         <p class="lede" data-i18n="heroLede">
           独特の文化や風習、言語が根付く日本マーケットへの進出。実行は、株式会社Keptyに一気通貫でお任せください。
         </p>
+        <ol class="flow" aria-label="支援範囲">
+          <li><span class="mark mark-circle" aria-hidden="true"></span><b data-i18n="flow1">セールス</b></li>
+          <li><span class="mark mark-square" aria-hidden="true"></span><b data-i18n="flow2">マーケティング</b></li>
+          <li><span class="mark mark-diamond" aria-hidden="true"></span><b data-i18n="flow3">サポート</b></li>
+          <li><span class="mark mark-bars" aria-hidden="true"></span><b data-i18n="flow4">分析</b></li>
+        </ol>
       </section>
 
       <section class="chapter" id="strength">
@@ -149,10 +155,12 @@
           <span>01</span>
           <h2 data-i18n="ch1Title">強み</h2>
         </header>
-        <p class="ch-lead" data-i18n="ch1Lead">日本開拓を、一社に任せきれる</p>
-        <p class="body" data-i18n="ch1Body">
-          セールス、マーケティング、カスタマーサポート、データ分析と振り返り。日本での実行を一社が担い、英語で本社に返します。
-        </p>
+        <div class="statement">
+          <p class="ch-lead" data-i18n="ch1Lead">日本開拓を、一社に任せきれる</p>
+          <p class="body" data-i18n="ch1Body">
+            セールス、マーケティング、カスタマーサポート、データ分析と振り返り。日本での実行を一社が担い、英語で本社に返します。
+          </p>
+        </div>
       </section>
 
       <section class="chapter" id="services">
@@ -160,36 +168,60 @@
           <span>02</span>
           <h2 data-i18n="ch2Title">支援内容</h2>
         </header>
-        <div class="split-text">
-          <div>
-            <h3 data-i18n="svcSales">セールス</h3>
-            <ul class="dots">
-              <li data-i18n="sales1">架電による市場開拓</li>
-              <li data-i18n="sales2">商談から受注まで</li>
-            </ul>
-          </div>
-          <div>
-            <h3 data-i18n="svcMkt">マーケティング</h3>
-            <ul class="dots">
-              <li data-i18n="mkt1">Webマーケティング（サイト・LPを含む）</li>
-              <li data-i18n="mkt2">SNSの立ち上げと運用</li>
-              <li data-i18n="mkt3">国内の展示会出展</li>
-            </ul>
-          </div>
-          <div>
-            <h3 data-i18n="svcCs">カスタマーサポート</h3>
-            <ul class="dots">
-              <li data-i18n="cs1">購入前の問い合わせと検討支援</li>
-              <li data-i18n="cs2">購入後のサポートとフォロー</li>
-            </ul>
-          </div>
-          <div>
-            <h3 data-i18n="svcData">データ分析</h3>
-            <ul class="dots">
-              <li data-i18n="data1">実行結果の定量・定性での振り返り</li>
-              <li data-i18n="data2">次の打ち手まで、本社へ報告</li>
-            </ul>
-          </div>
+        <div class="work">
+          <article class="band">
+            <div class="band-side">
+              <span class="mark mark-circle" aria-hidden="true"></span>
+              <span>01</span>
+            </div>
+            <div class="band-main">
+              <h3 data-i18n="svcSales">セールス</h3>
+              <ul class="dots">
+                <li data-i18n="sales1">架電による市場開拓</li>
+                <li data-i18n="sales2">商談から受注まで</li>
+              </ul>
+            </div>
+          </article>
+          <article class="band">
+            <div class="band-side">
+              <span class="mark mark-square" aria-hidden="true"></span>
+              <span>02</span>
+            </div>
+            <div class="band-main">
+              <h3 data-i18n="svcMkt">マーケティング</h3>
+              <ul class="dots">
+                <li data-i18n="mkt1">Webマーケティング（サイト・LPを含む）</li>
+                <li data-i18n="mkt2">SNSの立ち上げと運用</li>
+                <li data-i18n="mkt3">国内の展示会出展</li>
+              </ul>
+            </div>
+          </article>
+          <article class="band">
+            <div class="band-side">
+              <span class="mark mark-diamond" aria-hidden="true"></span>
+              <span>03</span>
+            </div>
+            <div class="band-main">
+              <h3 data-i18n="svcCs">カスタマーサポート</h3>
+              <ul class="dots">
+                <li data-i18n="cs1">購入前の問い合わせと検討支援</li>
+                <li data-i18n="cs2">購入後のサポートとフォロー</li>
+              </ul>
+            </div>
+          </article>
+          <article class="band">
+            <div class="band-side">
+              <span class="mark mark-bars" aria-hidden="true"></span>
+              <span>04</span>
+            </div>
+            <div class="band-main">
+              <h3 data-i18n="svcData">データ分析</h3>
+              <ul class="dots">
+                <li data-i18n="data1">実行結果の定量・定性での振り返り</li>
+                <li data-i18n="data2">次の打ち手まで、本社へ報告</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -210,7 +242,7 @@
           <span>04</span>
           <h2 data-i18n="ch4Title">代表</h2>
         </header>
-        <p class="name" data-i18n="founderName">梶山 知裕</p>
+        <p class="name"><span class="monogram" aria-hidden="true">TK</span><span data-i18n="founderName">梶山 知裕</span></p>
         <div class="bio">
           <p data-i18n="founderBio1">
             株式会社リクルートに入社。国内最大級の教育プロダクト「スタディサプリ」や、東南アジア（フィリピン・インドネシア）向けのグローバル教育事業「Quipper」にて事業戦略・企画に従事。

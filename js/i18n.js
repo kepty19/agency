@@ -13,6 +13,10 @@ const COPY = {
     heroTitle: "日本マーケットの制圧。",
     heroLede:
       "独特の文化や風習、言語が根付く日本マーケットへの進出。実行は、株式会社Keptyに一気通貫でお任せください。",
+    flow1: "セールス",
+    flow2: "マーケティング",
+    flow3: "サポート",
+    flow4: "分析",
     ch1Title: "強み",
     ch1Lead: "日本開拓を、一社に任せきれる",
     ch1Body:
@@ -79,6 +83,10 @@ const COPY = {
     heroTitle: "Command of the Japan market.",
     heroLede:
       "Japan has its own culture, customs, and language. Hand the operation to Kepty Co., Ltd.",
+    flow1: "Sales",
+    flow2: "Marketing",
+    flow3: "Support",
+    flow4: "Analysis",
     ch1Title: "Strength",
     ch1Lead: "One partner for the Japan operation",
     ch1Body:
