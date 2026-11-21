@@ -16,11 +16,17 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
+body,
+.rail,
+.mobile-bar,
+.mobile-nav:not([hidden]) {
   background-color: var(--bg);
   background-image: radial-gradient(rgba(22, 21, 19, 0.055) 0.65px, transparent 0.75px);
   background-size: 22px 22px;
+}
+
+body {
+  margin: 0;
   color: var(--ink);
   --lead: 1.7;
   font-family: var(--sans);
@@ -61,13 +67,10 @@ a {
   inset: 0 auto 0 0;
   width: var(--rail);
   padding: 1.75rem 1.35rem 1.5rem;
-  border-right: 1px dotted color-mix(in srgb, var(--ink) 18%, transparent);
+  border-right: 1px solid var(--rule);
   display: flex;
   flex-direction: column;
   z-index: 5;
-  background-color: color-mix(in srgb, var(--bg) 94%, transparent);
-  background-image: radial-gradient(rgba(22, 21, 19, 0.055) 0.65px, transparent 0.75px);
-  background-size: 22px 22px;
 }
 
 .rail-progress {
@@ -254,36 +257,6 @@ html[lang="en"] h1 {
   font-weight: 400;
 }
 
-.proof {
-  margin: 1.15rem 0 0;
-  max-width: 36rem;
-  color: var(--dim);
-  font-size: 0.84rem;
-}
-
-.proof a {
-  box-shadow: inset 0 -1px 0 var(--rule);
-}
-
-.proof a:hover {
-  box-shadow: inset 0 -1px 0 var(--ink);
-}
-
-.ask {
-  display: inline-block;
-  margin-top: 1.45rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.16em;
-  box-shadow: inset 0 -1px 0 var(--ink);
-}
-
-.ask:focus-visible {
-  outline: 1px solid var(--ink);
-  outline-offset: 4px;
-}
-
-html[lang="en"] .ask,
-html[lang="en"] .note-kicker,
 html[lang="en"] .note-grid dt {
   text-transform: uppercase;
 }
@@ -297,16 +270,21 @@ html[lang="en"] .note-grid dt {
   border: 0;
 }
 
-.chapter::before {
+.chapter::before,
+footer::before {
   content: "";
   display: block;
-  width: 2.1rem;
-  height: 5px;
-  margin: 0 0 1.85rem;
-  background-image: radial-gradient(circle, var(--ink) 1.15px, transparent 1.25px);
-  background-size: 0.7rem 5px;
-  background-repeat: repeat-x;
-  opacity: 0.38;
+  width: 100%;
+  height: 0;
+  margin: 0 0 1.75rem;
+  border-top: 1px solid var(--rule);
+  background: none;
+}
+
+.statement {
+  margin-top: 0.35rem;
+  padding: 0.15rem 0 1.15rem;
+  border-bottom: 1px solid var(--rule);
 }
 
 .ch-head {
@@ -365,7 +343,7 @@ html[lang="en"] .note-grid dt {
 
 .steps {
   list-style: none;
-  margin: 1.5rem 0 0;
+  margin: 1.35rem 0 0;
   padding: 0;
   max-width: 44rem;
   counter-reset: step;
@@ -376,7 +354,8 @@ html[lang="en"] .note-grid dt {
   grid-template-columns: 3.2rem 1fr;
   gap: 1.1rem;
   align-items: start;
-  padding: 0.7rem 0;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid var(--rule);
   counter-increment: step;
   color: var(--dim);
   --fs: 1em;
@@ -414,13 +393,23 @@ h3 {
   margin: 1.5rem 0 0;
   padding: 0;
   max-width: 44rem;
+  border-top: 1px solid var(--rule);
 }
 
 .sheet div {
   display: grid;
   grid-template-columns: 7.5rem 1fr;
   gap: 1.5rem;
-  padding: 0.55rem 0;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.sheet a {
+  border-bottom: 1px solid var(--rule);
+}
+
+.sheet a:hover {
+  border-bottom-color: var(--ink);
 }
 
 .sheet dt {
@@ -516,14 +505,16 @@ h3 {
 .band {
   display: grid;
   grid-template-columns: 5.75rem 1fr;
+  border-bottom: 1px solid var(--rule);
 }
 
 .band + .band {
-  margin-top: 0.85rem;
+  margin-top: 0;
 }
 
 .work {
   margin-top: 1.35rem;
+  border-top: 1px solid var(--rule);
 }
 
 .band-side {
@@ -569,19 +560,10 @@ h3 {
 .note {
   margin-top: 1.6rem;
   max-width: 44rem;
-  border: 1px solid var(--rule);
-  padding: 1.15rem 1.3rem 1.25rem;
-}
-
-.note-kicker {
-  margin: 0;
-  font-size: 0.66rem;
-  letter-spacing: 0.12em;
-  color: var(--dim);
 }
 
 .note-title {
-  margin: 0.4rem 0 0.85rem;
+  margin: 0 0 0.85rem;
   font-family: var(--serif);
   font-size: 1.28rem;
   font-weight: 500;
@@ -679,7 +661,7 @@ h3 {
 }
 
 .mail a:hover {
-  box-shadow: inset 0 -1px 0 var(--ink);
+  border-bottom-color: var(--ink);
 }
 
 form {
@@ -747,13 +729,13 @@ button[type="submit"] {
   justify-self: start;
   margin-top: 0.3rem;
   border: 0;
+  border-bottom: 1px solid var(--ink);
   background: none;
-  padding: 0 0 0.2rem;
+  padding: 0 0 0.15rem;
   font: inherit;
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   cursor: pointer;
-  box-shadow: inset 0 -1px 0 var(--ink);
 }
 
 .form-status {
@@ -769,15 +751,7 @@ footer {
 }
 
 footer::before {
-  content: "";
-  display: block;
-  width: 2.1rem;
-  height: 5px;
-  margin: 0 0 1.1rem;
-  background-image: radial-gradient(circle, var(--ink) 1.15px, transparent 1.25px);
-  background-size: 0.7rem 5px;
-  background-repeat: repeat-x;
-  opacity: 0.38;
+  margin-bottom: 1.1rem;
 }
 
 @media (max-width: 860px) {
@@ -793,7 +767,6 @@ footer::before {
     top: 0;
     z-index: 6;
     padding: 0.9rem 1.15rem;
-    background: color-mix(in srgb, var(--bg) 94%, transparent);
     border-bottom: 1px solid var(--rule);
   }
 
@@ -801,7 +774,7 @@ footer::before {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    border: 1px solid var(--ink);
+    border: 1px solid var(--rule);
     background: transparent;
     color: var(--ink);
     padding: 0.42rem 0.65rem 0.4rem 0.55rem;
@@ -826,6 +799,7 @@ footer::before {
 
   .menu-btn[aria-expanded="true"] {
     background: var(--ink);
+    border-color: var(--ink);
     color: var(--bg);
   }
 
@@ -848,14 +822,13 @@ footer::before {
     gap: 0;
     padding: 0.15rem 1.15rem 0.35rem;
     border-bottom: 1px solid var(--rule);
-    background-color: color-mix(in srgb, var(--bg) 94%, transparent);
   }
 
   .mobile-nav a {
     color: var(--ink);
     font-size: 0.95rem;
     padding: 0.78rem 0;
-    border-bottom: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+    border-bottom: 1px solid var(--rule);
   }
 
   .mobile-nav a:last-child {
@@ -947,13 +920,13 @@ footer::before {
 
   .opening-line {
     width: 1px;
-    background: var(--ink);
+    background: var(--rule);
   }
 
   .opening-seal {
     width: 4.7rem;
     padding: 0.26rem;
-    border: 1px solid var(--ink);
+    border: 1px solid var(--rule);
     box-sizing: border-box;
   }
 
@@ -965,7 +938,7 @@ footer::before {
     gap: 0.5rem;
     width: 100%;
     height: 100%;
-    border: 1px solid var(--ink);
+    border: 1px solid var(--rule);
     font-size: 1.85rem;
   }
 
@@ -989,45 +962,6 @@ footer::before {
     padding: 0.2rem 0 0.85rem;
   }
 
-  .steps {
-    margin-top: 1.15rem;
-  }
-
-  .steps li {
-    position: relative;
-    grid-template-columns: 2.6rem 1fr;
-    gap: 0.9rem;
-    align-items: start;
-    padding: 0 0 1.35rem;
-  }
-
-  .steps li:last-child {
-    padding-bottom: 0.15rem;
-  }
-
-  .steps li::before {
-    z-index: 1;
-    display: grid;
-    place-items: center;
-    width: 2.05rem;
-    height: 2.05rem;
-    margin-top: 0.08rem;
-    background: var(--ink);
-    color: var(--bg);
-    font-size: 0.68rem;
-    letter-spacing: 0.02em;
-    line-height: 1;
-  }
-
-  .steps li:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    left: 1.025rem;
-    top: 2.25rem;
-    bottom: 0.2rem;
-    width: 1px;
-    background: color-mix(in srgb, var(--ink) 32%, transparent);
-  }
 }
 
 @media (min-width: 861px) {
@@ -1059,9 +993,7 @@ footer::before {
   }
 
   .statement {
-    margin-top: 0.35rem;
-    padding: 1.2rem 0 1.25rem;
-    border-top: 1px solid var(--rule);
+    padding: 0.35rem 0 1.2rem;
     border-bottom: 1px solid var(--rule);
   }
 
@@ -1083,15 +1015,8 @@ footer::before {
     letter-spacing: 0.03em;
   }
 
-  .steps {
-    margin-top: 1.35rem;
-    border-top: 1px solid var(--rule);
-  }
-
   .steps li {
     align-items: center;
-    padding: 0.95rem 0;
-    border-bottom: 1px solid var(--rule);
   }
 
   .sheet {
@@ -1106,8 +1031,6 @@ footer::before {
 
   form {
     max-width: 44rem;
-    border: 1px solid var(--rule);
-    padding: 1.35rem 1.45rem 1.45rem;
   }
 }
 
