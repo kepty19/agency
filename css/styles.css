@@ -257,10 +257,6 @@ html[lang="en"] h1 {
   font-weight: 400;
 }
 
-html[lang="en"] .note-grid dt {
-  text-transform: uppercase;
-}
-
 .ch-lead {
   color: var(--dim);
 }
@@ -274,17 +270,19 @@ html[lang="en"] .note-grid dt {
 footer::before {
   content: "";
   display: block;
-  width: 100%;
-  height: 0;
-  margin: 0 0 1.75rem;
-  border-top: 1px solid var(--rule);
-  background: none;
+  width: 2.1rem;
+  height: 5px;
+  margin: 0 0 1.85rem;
+  border: 0;
+  background-image: radial-gradient(circle, var(--ink) 1.15px, transparent 1.25px);
+  background-size: 0.7rem 5px;
+  background-repeat: repeat-x;
+  opacity: 0.38;
 }
 
 .statement {
   margin-top: 0.35rem;
-  padding: 0.15rem 0 1.15rem;
-  border-bottom: 1px solid var(--rule);
+  padding: 0.15rem 0 0.2rem;
 }
 
 .ch-head {
@@ -354,8 +352,7 @@ footer::before {
   grid-template-columns: 3.2rem 1fr;
   gap: 1.1rem;
   align-items: start;
-  padding: 0.95rem 0;
-  border-bottom: 1px solid var(--rule);
+  padding: 0.7rem 0;
   counter-increment: step;
   color: var(--dim);
   --fs: 1em;
@@ -505,16 +502,14 @@ h3 {
 .band {
   display: grid;
   grid-template-columns: 5.75rem 1fr;
-  border-bottom: 1px solid var(--rule);
 }
 
 .band + .band {
-  margin-top: 0;
+  margin-top: 0.85rem;
 }
 
 .work {
   margin-top: 1.35rem;
-  border-top: 1px solid var(--rule);
 }
 
 .band-side {
@@ -557,68 +552,14 @@ h3 {
   font-size: 0.92rem;
 }
 
-.note {
-  margin-top: 1.6rem;
-  max-width: 44rem;
-}
-
-.note-title {
-  margin: 0 0 0.85rem;
-  font-family: var(--serif);
-  font-size: 1.28rem;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-}
-
-.note-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.75rem 1rem;
-  margin: 0;
-  padding: 0.75rem 0;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
-}
-
-.note-grid div {
-  display: grid;
-  gap: 0.12rem;
-}
-
-.note-grid dt {
-  font-size: 0.66rem;
-  letter-spacing: 0.1em;
-  color: var(--dim);
-}
-
-.note-grid dd {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: 1.55rem;
-  line-height: 1.2;
-  color: var(--ink);
-}
-
-.note p {
-  margin: 0.8rem 0 0;
-  color: var(--dim);
-}
-
-.note strong {
-  color: var(--ink);
-  font-weight: 500;
-}
-
 .faq {
-  margin: 0.4rem 0 0;
+  margin: 0.2rem 0 0;
   padding: 0;
   max-width: 44rem;
-  border-top: 1px solid var(--rule);
 }
 
 .faq div {
-  padding: 0.95rem 0;
-  border-bottom: 1px solid var(--rule);
+  padding: 0.85rem 0 0;
 }
 
 .faq dt {
@@ -884,14 +825,6 @@ footer::before {
     display: none;
   }
 
-  .note-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .note-grid dd {
-    font-size: 1.35rem;
-  }
-
   .opening-mark {
     display: flex;
     align-items: stretch;
@@ -947,7 +880,7 @@ footer::before {
   }
 
   .band + .band {
-    margin-top: 0;
+    margin-top: 1.15rem;
   }
 
   .band-side {
@@ -987,14 +920,12 @@ footer::before {
   .sheet,
   .band .dots,
   .split-text,
-  .note,
   .faq {
     max-width: none;
   }
 
   .statement {
-    padding: 0.35rem 0 1.2rem;
-    border-bottom: 1px solid var(--rule);
+    padding: 0.35rem 0 0.15rem;
   }
 
   .statement .ch-lead,
