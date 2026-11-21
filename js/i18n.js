@@ -38,7 +38,7 @@ const COPY = {
     ch3Title: "体制",
     sys1: "最初の架電と施策から、商談、受注、提供までを一つのチームで実施",
     sys2: "購入前から購入後まで、カスタマーサポートを継続して代行",
-    sys3: "日本国外の本社に対し、日次の定例と、数字・振り返り・次の打ち手の報告を英語で実施",
+    sys3: "数値と進捗は日次で英語で共有できる。週次の定例もできる",
     ch4Title: "代表",
     founderName: "梶山 知裕",
     founderBio1:
@@ -108,7 +108,7 @@ const COPY = {
     ch3Title: "Operating model",
     sys1: "From the first call and the first campaign through the meeting, the order, and delivery — one team",
     sys2: "Support stays with us before the purchase and after it",
-    sys3: "For companies outside Japan: daily stand-ups, plus the numbers, the review, and the next actions, in English",
+    sys3: "Numbers and progress can be shared each day, in English. A weekly meeting is also available.",
     ch4Title: "Founder & CEO",
     founderName: "Tomohiro Kajiyama",
     founderBio1:

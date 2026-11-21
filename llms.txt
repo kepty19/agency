@@ -2,7 +2,7 @@
 
 > Japan market entry, run as one operation, for companies based outside Japan.
 
-Kepty Co., Ltd. (株式会社Kepty) runs Japan market entry as one operation: sales, marketing, customer support, and analysis. The work is not tied to one product category. The working language in the market is Japanese. Reporting to headquarters outside Japan is in English: a daily stand-up, the numbers, a review of what ran, and the next actions.
+Kepty Co., Ltd. (株式会社Kepty) runs Japan market entry as one operation: sales, marketing, customer support, and analysis. The work is not tied to one product category. The working language in the market is Japanese. Reporting to headquarters outside Japan is in English. Numbers and progress can be shared each day. A weekly meeting is also available for the review and the next actions.
 
 ## Facts
 
@@ -28,7 +28,8 @@ Tomohiro Kajiyama joined Recruit Holdings, one of Japan’s largest technology c
 - Marketing: web marketing (sites and landing pages), social channels, exhibitions and trade shows in Japan
 - Customer support before purchase and after purchase
 - Data analysis and the next actions, reported to headquarters
-- Daily stand-ups, the numbers, and the next actions, in English, for companies outside Japan
+- Daily sharing of numbers and progress, in English, when headquarters wants it
+- A weekly meeting for the review and the next actions
 
 ## Site
 
