@@ -42,7 +42,7 @@ const COPY = {
     ch4Title: "代表",
     founderName: "梶山 知裕",
     founderBio1:
-      "株式会社リクルートに入社。国内最大級の教育プロダクト「スタディサプリ」や、東南アジア（フィリピン・インドネシア）向けのグローバル教育事業「Quipper」にて事業戦略・企画に従事。",
+      "国内最大級のIT企業である株式会社リクルートに入社。国内最大級の教育プロダクト「スタディサプリ」や、日本国内の「Indeed」、東南アジア（フィリピン・インドネシア）向けのグローバル教育事業「Quipper」にて事業戦略・企画に従事。",
     founderBio2:
       "その後、株式会社Keptyを設立。海外企業の日本マーケット進出について、セールス、マーケティング、カスタマーサポート、データ分析までを一気通貫で担い、英語で本社に報告する。",
     ch5Title: "会社情報",
@@ -112,7 +112,7 @@ const COPY = {
     ch4Title: "Founder & CEO",
     founderName: "Tomohiro Kajiyama",
     founderBio1:
-      "He joined Recruit Holdings and worked in business strategy and planning on Study Sapuri, one of Japan’s largest education products, and on Quipper, Recruit Holdings’ global education business for Southeast Asia (the Philippines and Indonesia).",
+      "He joined Recruit Holdings, one of Japan’s largest technology companies, and worked in business strategy and planning on Study Sapuri, one of Japan’s largest education products, on Indeed in Japan, and on Quipper, Recruit Holdings’ global education business for Southeast Asia (the Philippines and Indonesia).",
     founderBio2:
       "He then founded Kepty Co., Ltd. to run Japan market entry for companies based outside Japan — sales, marketing, customer support, and analysis — as one operation, reported in English.",
     ch5Title: "Company",
