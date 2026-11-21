@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>End-to-end Japan market-entry partner | Kepty Co., Ltd.</title>
+    <title>Japan market entry, run as one operation | Kepty Co., Ltd.</title>
     <meta
       name="description"
       content="Kepty Co., Ltd. runs Japan market entry for companies outside Japan. Sales, marketing, customer support, and analysis — one team, with reporting in English."
@@ -16,7 +16,7 @@
     <meta property="og:site_name" content="Kepty Co., Ltd." />
     <meta
       property="og:title"
-      content="End-to-end Japan market-entry partner | Kepty Co., Ltd."
+      content="Japan market entry, run as one operation | Kepty Co., Ltd."
     />
     <meta
       property="og:description"
@@ -39,7 +39,13 @@
             "email": "contact@kepty.co",
             "inLanguage": "en",
             "areaServed": { "@type": "Country", "name": "Japan" },
-            "founder": { "@type": "Person", "name": "Tomohiro Kajiyama", "alternateName": "梶山 知裕" },
+            "founder": {
+              "@type": "Person",
+              "name": "Tomohiro Kajiyama",
+              "alternateName": "梶山 知裕",
+              "jobTitle": "Founder & CEO",
+              "worksFor": { "@id": "https://keptyjapan.com/#org" }
+            },
             "description": "Japan market-entry partner for companies based outside Japan. Sales, marketing, customer support, and analysis, run as one operation and reported in English.",
             "knowsAbout": [
               "Japan market entry",
@@ -56,10 +62,18 @@
             }
           },
           {
+            "@type": "WebSite",
+            "@id": "https://keptyjapan.com/#website",
+            "url": "https://keptyjapan.com/",
+            "name": "Kepty Co., Ltd.",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://keptyjapan.com/#org" }
+          },
+          {
             "@type": "WebPage",
             "@id": "https://keptyjapan.com/#webpage",
             "url": "https://keptyjapan.com/",
-            "name": "End-to-end Japan market-entry partner",
+            "name": "Japan market entry, run as one operation",
             "inLanguage": "en",
             "isPartOf": { "@id": "https://keptyjapan.com/#website" },
             "about": { "@id": "https://keptyjapan.com/#org" }
@@ -80,7 +94,23 @@
                 "name": "What does Kepty take on for a Japan entry?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Sales (outbound calls, meetings, and orders), marketing (web, social, and exhibitions in Japan), customer support before and after purchase, and data analysis with a review of what to do next. The work is not tied to one product category."
+                  "text": "Sales (outbound calls, meetings, and orders), marketing (web, social, and exhibitions in Japan), customer support before and after purchase, and analysis with the next actions. The work is not tied to one product category."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does headquarters receive?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A daily stand-up, the numbers, a review of what ran, and the next actions, in English."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the work limited to one industry?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. The operation is the same across product categories. The first conversation names the category, the buyer, and the quarter."
                 }
               },
               {
@@ -88,7 +118,7 @@
                 "name": "How can an overseas company contact Kepty?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Email contact@kepty.co or use the inquiry form on this page."
+                  "text": "Email contact@kepty.co or use the inquiry form on this page. The reply covers fit and what the first month would contain."
                 }
               }
             ]
@@ -102,7 +132,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300;400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Shippori+Mincho:wght@500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=21" />
+    <link rel="stylesheet" href="css/styles.css?v=22" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -113,12 +143,13 @@
       <p class="loc">Kepty Co., Ltd.</p>
       <nav class="index" aria-label="Menu">
         <p class="index-label">Menu</p>
-        <a href="#strength"><span>01</span> <b>Strength</b></a>
-        <a href="#services"><span>02</span> <b>Services</b></a>
-        <a href="#system"><span>03</span> <b>Operating model</b></a>
-        <a href="#founder"><span>04</span> <b>Founder &amp; CEO</b></a>
+        <a href="#work"><span>01</span> <b>Work</b></a>
+        <a href="#scope"><span>02</span> <b>Scope</b></a>
+        <a href="#reporting"><span>03</span> <b>Reporting</b></a>
+        <a href="#founder"><span>04</span> <b>Founder</b></a>
         <a href="#company"><span>05</span> <b>Company</b></a>
-        <a href="#inquiry"><span>06</span> <b>Inquiry</b></a>
+        <a href="#questions"><span>06</span> <b>Questions</b></a>
+        <a href="#inquiry"><span>07</span> <b>Inquiry</b></a>
       </nav>
     </aside>
 
@@ -128,21 +159,26 @@
     </header>
 
     <div class="mobile-nav" id="mobile-nav" hidden>
-      <a href="#strength"><span>01</span> <b>Strength</b></a>
-      <a href="#services"><span>02</span> <b>Services</b></a>
-      <a href="#system"><span>03</span> <b>Operating model</b></a>
-      <a href="#founder"><span>04</span> <b>Founder &amp; CEO</b></a>
+      <a href="#work"><span>01</span> <b>Work</b></a>
+      <a href="#scope"><span>02</span> <b>Scope</b></a>
+      <a href="#reporting"><span>03</span> <b>Reporting</b></a>
+      <a href="#founder"><span>04</span> <b>Founder</b></a>
       <a href="#company"><span>05</span> <b>Company</b></a>
-      <a href="#inquiry"><span>06</span> <b>Inquiry</b></a>
+      <a href="#questions"><span>06</span> <b>Questions</b></a>
+      <a href="#inquiry"><span>07</span> <b>Inquiry</b></a>
     </div>
 
     <main id="main">
       <section class="open" id="top">
         <p class="kicker">End-to-end Japan market-entry partner</p>
-        <h1>Command of <span class="together">the Japan market.</span></h1>
+        <h1>Japan market entry, run as one operation.</h1>
         <p class="lede">
-          Japan has its own culture, customs, and language. Hand the operation to Kepty Co., Ltd.
+          Sales, marketing, customer support, and analysis sit with one team in Japan. Companies outside Japan hand over the work, and receive it back in English.
         </p>
+        <p class="proof">
+          <a href="#founder">Tomohiro Kajiyama</a> · Recruit Holdings · Study Sapuri · Indeed in Japan · Quipper
+        </p>
+        <a class="ask" href="#inquiry">Inquire</a>
         <ol class="flow" aria-label="Scope">
           <li><span class="mark mark-circle" aria-hidden="true"></span><b>Sales</b></li>
           <li><span class="mark mark-square" aria-hidden="true"></span><b>Marketing</b></li>
@@ -152,27 +188,45 @@
         <div class="opening-mark" aria-hidden="true">
           <p class="opening-vert">日本市場</p>
           <span class="opening-line"></span>
-          <p class="opening-seal"><span><b>制</b><b>圧</b></span></p>
+          <p class="opening-seal"><span><b>実</b><b>行</b></span></p>
         </div>
       </section>
 
-      <section class="chapter" id="strength">
+      <section class="chapter" id="work">
         <header class="ch-head">
           <span>01</span>
-          <h2>Strength</h2>
+          <h2>The work</h2>
         </header>
         <div class="statement">
-          <p class="ch-lead">One partner for the Japan operation</p>
+          <p class="ch-lead">One team holds the Japan operation.</p>
           <p class="body">
-            Sales, marketing, customer support, and analysis sit with one team in Japan. Companies outside Japan hand over the entry, and receive the work back in English.
+            Japan has its own culture, customs, and language. The same people who sell also run the campaign, the support, and the review.
           </p>
+        </div>
+        <div class="split-text">
+          <div>
+            <h3>You hand over</h3>
+            <ul class="dots">
+              <li>The first call through to delivery</li>
+              <li>Support before the purchase and after it</li>
+              <li>The Japan operation, as one piece of work</li>
+            </ul>
+          </div>
+          <div>
+            <h3>You receive</h3>
+            <ul class="dots">
+              <li>A daily stand-up in English</li>
+              <li>The numbers, what they mean, and the next actions</li>
+              <li>One counterpart for the whole operation</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section class="chapter" id="services">
+      <section class="chapter" id="scope">
         <header class="ch-head">
           <span>02</span>
-          <h2>Services</h2>
+          <h2>Scope</h2>
         </header>
         <div class="work">
           <article class="band">
@@ -186,6 +240,7 @@
                 <li>Outbound calls that open the market</li>
                 <li>Meetings through to the order</li>
               </ul>
+              <p class="outcome">A pipeline headquarters can read without a translation layer.</p>
             </div>
           </article>
           <article class="band">
@@ -200,6 +255,7 @@
                 <li>Social channels, set up and run</li>
                 <li>Exhibitions and trade shows in Japan</li>
               </ul>
+              <p class="outcome">The Japanese page, the channels, and the room, run by the same team that sells.</p>
             </div>
           </article>
           <article class="band">
@@ -213,6 +269,7 @@
                 <li>Support before purchase, while the buyer decides</li>
                 <li>Support after purchase, including follow-up</li>
               </ul>
+              <p class="outcome">The buyer stays with the team after the order.</p>
             </div>
           </article>
           <article class="band">
@@ -226,21 +283,46 @@
                 <li>A quantitative and qualitative review of what ran</li>
                 <li>The next actions, reported to headquarters</li>
               </ul>
+              <p class="outcome">The week ends with a decision.</p>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="chapter" id="system">
+      <section class="chapter" id="reporting">
         <header class="ch-head">
           <span>03</span>
-          <h2>Operating model</h2>
+          <h2>Reporting</h2>
         </header>
+        <div class="statement">
+          <p class="ch-lead">English to headquarters. Japanese in the market.</p>
+        </div>
         <ol class="steps">
-          <li>From the first call and the first campaign through the meeting, the order, and delivery — one team</li>
-          <li>Support stays with us before the purchase and after it</li>
-          <li>For companies outside Japan: daily stand-ups, plus the numbers, the review, and the next actions, in English</li>
+          <li>Each morning, a short stand-up: what was done, what is blocked, what happens today.</li>
+          <li>Through the week, calls, meetings, campaigns, and support stay on one list.</li>
+          <li>At the week’s end, the numbers, the review, and the next actions go to headquarters in English.</li>
         </ol>
+        <!-- placeholder: illustrative weekly note, replace with a real report -->
+        <aside class="note" aria-label="Sample weekly note">
+          <p class="note-kicker">Sample · figures are illustrative</p>
+          <p class="note-title">Week of 16 November</p>
+          <dl class="note-grid">
+            <div>
+              <dt>Calls</dt>
+              <dd>84</dd>
+            </div>
+            <div>
+              <dt>Meetings</dt>
+              <dd>11</dd>
+            </div>
+            <div>
+              <dt>Orders</dt>
+              <dd>3</dd>
+            </div>
+          </dl>
+          <p><strong>What moved.</strong> Two distributors asked for a one-page explanation in Japanese.</p>
+          <p><strong>Next.</strong> Rewrite that page. Book the Osaka exhibition. Call the six accounts that went quiet.</p>
+        </aside>
       </section>
 
       <section class="chapter" id="founder">
@@ -270,6 +352,10 @@
             <dd>Kepty Co., Ltd.</dd>
           </div>
           <div>
+            <dt>Japanese name</dt>
+            <dd>株式会社Kepty</dd>
+          </div>
+          <div>
             <dt>Founder &amp; CEO</dt>
             <dd>Tomohiro Kajiyama</dd>
           </div>
@@ -277,18 +363,59 @@
             <dt>Business</dt>
             <dd>Japan market-entry support for overseas companies</dd>
           </div>
+          <!-- placeholder: city only, until a street address is confirmed -->
+          <div>
+            <dt>Base</dt>
+            <dd>Tokyo, Japan</dd>
+          </div>
+          <div>
+            <dt>Languages</dt>
+            <dd>Japanese in the market. English to headquarters.</dd>
+          </div>
           <div>
             <dt>Contact</dt>
-            <dd>contact@kepty.co</dd>
+            <dd><a class="mail-inline" href="mailto:contact@kepty.co">contact@kepty.co</a></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="chapter" id="questions">
+        <header class="ch-head">
+          <span>06</span>
+          <h2>Questions</h2>
+        </header>
+        <dl class="faq">
+          <div>
+            <dt>Does Kepty help overseas companies enter the Japan market?</dt>
+            <dd>Yes. Kepty Co., Ltd. is the Japan-side partner. It runs sales, marketing, customer support, and analysis as one operation, and reports to companies outside Japan in English.</dd>
+          </div>
+          <div>
+            <dt>What does Kepty take on for a Japan entry?</dt>
+            <dd>Sales (outbound calls, meetings, and orders), marketing (web, social, and exhibitions in Japan), customer support before and after purchase, and analysis with the next actions. The work is not tied to one product category.</dd>
+          </div>
+          <div>
+            <dt>What does headquarters receive?</dt>
+            <dd>A daily stand-up, the numbers, a review of what ran, and the next actions, in English.</dd>
+          </div>
+          <div>
+            <dt>Is the work limited to one industry?</dt>
+            <dd>No. The operation is the same across product categories. The first conversation names the category, the buyer, and the quarter.</dd>
+          </div>
+          <div>
+            <dt>How can an overseas company contact Kepty?</dt>
+            <dd>Email contact@kepty.co or use the inquiry form on this page. The reply covers fit and what the first month would contain.</dd>
           </div>
         </dl>
       </section>
 
       <section class="chapter chapter-end" id="inquiry">
         <header class="ch-head">
-          <span>06</span>
+          <span>07</span>
           <h2>Inquiry</h2>
         </header>
+        <p class="inquiry-note">
+          Send the company, the product, and the quarter you have in mind. A reply comes from contact@kepty.co with a view on fit and the first month.
+        </p>
         <form id="contact-form" novalidate>
           <label>
             <span>Company</span>

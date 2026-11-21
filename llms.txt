@@ -1,8 +1,10 @@
 # Kepty Co., Ltd.
 
-> End-to-end Japan market-entry partner for companies based outside Japan.
+> Japan market entry, run as one operation, for companies based outside Japan.
 
-Kepty Co., Ltd. (株式会社Kepty) runs Japan market entry as one operation: sales, marketing, customer support, and analysis. The work is not tied to one product category. Reporting to headquarters outside Japan is in English.
+Kepty Co., Ltd. (株式会社Kepty) runs Japan market entry as one operation: sales, marketing, customer support, and analysis. The work is not tied to one product category. The working language in the market is Japanese. Reporting to headquarters outside Japan is in English: a daily stand-up, the numbers, a review of what ran, and the next actions.
+
+The weekly note shown on the site is a sample of that format. The figures in it are illustrative, not a client result.
 
 ## Facts
 
@@ -10,10 +12,16 @@ Kepty Co., Ltd. (株式会社Kepty) runs Japan market entry as one operation: sa
 - Japanese name: 株式会社Kepty
 - Brand: KEPTY
 - Founder & CEO: Tomohiro Kajiyama (梶山 知裕)
+- Base: Tokyo, Japan
 - Contact: contact@kepty.co
 - Market served: Japan
 - Clients: companies based outside Japan
+- Working language: Japanese
 - Reporting language to overseas headquarters: English
+
+## Founder
+
+Tomohiro Kajiyama joined Recruit Holdings, one of Japan’s largest technology companies. He worked in business strategy and planning on Study Sapuri, one of Japan’s largest education products, on Indeed in Japan, and on Quipper, Recruit Holdings’ global education business for Southeast Asia (the Philippines and Indonesia). He then founded Kepty Co., Ltd.
 
 ## What we do
 
@@ -21,8 +29,8 @@ Kepty Co., Ltd. (株式会社Kepty) runs Japan market entry as one operation: sa
 - Sales: outbound calls, meetings, and order-taking
 - Marketing: web marketing (sites and landing pages), social channels, exhibitions and trade shows in Japan
 - Customer support before purchase and after purchase
-- Data analysis and a review of what to do next
-- Daily stand-ups and quantitative and qualitative reporting in English for companies outside Japan
+- Data analysis and the next actions, reported to headquarters
+- Daily stand-ups and a weekly note in English for companies outside Japan
 
 ## Site
 
